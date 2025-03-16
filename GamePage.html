@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pac-Man</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>A PacMan Game</h1>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="800"></canvas>
+    </div>
+    <div id="controls">
+        <div id="control-grid">
+            <button id="up" class="control-btn">↑</button>
+            <button id="left" class="control-btn">←</button>
+            <button id="right" class="control-btn">→</button>
+            <button id="down" class="control-btn">↓</button>
+        </div>
+    </div>
+
+    <!-- Inclusion des fichiers JavaScript dans l'ordre -->
+    <script src="./Entity/MovementHandler.js"></script>
+    <script src="./Entity/PacMan.js"></script>
+    <script src="./Entity/Ghost.js"></script>
+
+    <script src="./Collectible.js"></script>
+
+    <script src="./Entity/PathFinder/PathfindingStrategy.js"></script>
+    <script src="./Entity/PathFinder/AstarPathFindingStrategy.js"></script>
+
+
+    <script src="./Stage/Stage.js"></script>
+    <script src="./Stage/Level1-9.js"></script>
+
+    <script src="./Game.js"></script>
+</body>
+
+</html>
